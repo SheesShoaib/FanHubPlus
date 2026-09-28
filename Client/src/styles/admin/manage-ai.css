@@ -1,0 +1,32 @@
+.ai-faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.ai-faq-card {
+  padding: 18px 20px;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: #101018;
+}
+
+.ai-faq-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.ai-faq-card h3 {
+  color: #f2f2f7;
+  font-size: 0.95rem;
+  margin: 0 0 8px;
+}
+
+.ai-faq-card p {
+  color: #9494a8;
+  font-size: 0.85rem;
+  line-height: 1.6;
+  margin: 0;
+}

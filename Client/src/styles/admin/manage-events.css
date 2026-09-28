@@ -1,0 +1,6 @@
+.events-location {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #9494a8;
+}

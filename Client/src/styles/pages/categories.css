@@ -1,0 +1,90 @@
+.categories-page {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 90px 20px 100px;
+}
+
+.categories-hero {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.categories-hero .common-section-title {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.category-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 28px 24px;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  background: var(--surface);
+  transition: var(--transition);
+}
+
+.category-card:hover {
+  border-color: var(--border-bright);
+  transform: translateY(-4px);
+}
+
+.category-card-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: var(--radius-sm);
+  color: #fff;
+  margin-bottom: 18px;
+}
+
+.accent-purple .category-card-icon { background: linear-gradient(135deg, #8b5cf6, #a78bfa); }
+.accent-blue .category-card-icon { background: linear-gradient(135deg, #4f7cff, #6ea8fe); }
+.accent-pink .category-card-icon { background: linear-gradient(135deg, #ec4899, #f472b6); }
+.accent-orange .category-card-icon { background: linear-gradient(135deg, #fb923c, #fcd34d); }
+.accent-cyan .category-card-icon { background: linear-gradient(135deg, #22d3ee, #67e8f9); }
+.accent-green .category-card-icon { background: linear-gradient(135deg, #34d399, #6ee7b7); }
+
+.category-card h3 {
+  color: var(--text);
+  font-size: 1.1rem;
+  margin: 0 0 8px;
+}
+
+.category-card p {
+  color: var(--text-soft);
+  font-size: 0.88rem;
+  line-height: 1.6;
+  margin: 0 0 20px;
+  flex: 1;
+}
+
+.category-card-cta {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--purple-light);
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+@media (max-width: 1000px) {
+  .categories-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (max-width: 720px) {
+  .categories-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 460px) {
+  .categories-grid { grid-template-columns: 1fr; }
+}

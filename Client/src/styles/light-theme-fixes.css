@@ -1,0 +1,29 @@
+html[data-theme="light"],
+html[data-theme="light"] body {
+  background: #ffffff !important;
+  color: #161a1b !important;
+}
+html[data-theme="light"] .stories-hero,
+html[data-theme="light"] .events-hero,
+html[data-theme="light"] .event-banner,
+html[data-theme="light"] .story-card-image,
+html[data-theme="light"] .fh-maintenance {
+  --text: #f3f5f5;
+  --text-soft: #b8c0c2;
+  --text-muted: #9aa3a6;
+  --border: #283033;
+  --bg: #0b0d0f;
+  --bg-soft: #101315;
+  --surface: #15191b;
+}
+html[data-theme="light"] .event-image {
+  background: #11141a !important;
+}
+
+html[data-theme="light"] .events-hero,
+html[data-theme="light"] .stories-hero {
+  background: #0e1112 !important;
+}
+html[data-theme="light"] :is(.stories-hero, .events-hero, .event-banner, .story-card-image, .fh-maintenance) :is(h1, h2, h3, h4, h5, h6) {
+  color: #f4f5f5 !important;
+}

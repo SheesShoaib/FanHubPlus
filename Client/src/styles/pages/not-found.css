@@ -1,0 +1,106 @@
+.notfound-page {
+  position: relative;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  padding: 60px 20px;
+}
+
+.notfound-glow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 500px;
+  height: 500px;
+  transform: translate(-50%, -50%);
+  background: var(--gradient-primary);
+  filter: blur(140px);
+  opacity: 0.25;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.notfound-content {
+  position: relative;
+  z-index: 1;
+  max-width: 560px;
+}
+
+.notfound-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border-radius: 999px;
+  border: 1px solid var(--border-bright);
+  background: var(--glass);
+  color: var(--purple-light);
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+.notfound-code {
+  font-size: clamp(80px, 16vw, 160px);
+  line-height: 1;
+  font-weight: 800;
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  margin: 0 0 12px;
+}
+
+.notfound-title {
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  color: var(--text);
+  margin-bottom: 14px;
+}
+
+.notfound-text {
+  color: var(--text-soft);
+  line-height: 1.7;
+  margin-bottom: 34px;
+}
+
+.notfound-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.notfound-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 13px 26px;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.notfound-btn-primary {
+  background: var(--gradient-primary);
+  color: #fff;
+  box-shadow: var(--shadow-purple);
+}
+
+.notfound-btn-primary:hover {
+  transform: translateY(-2px);
+}
+
+.notfound-btn-outline {
+  border: 1px solid var(--border-bright);
+  color: var(--text);
+  background: transparent;
+}
+
+.notfound-btn-outline:hover {
+  background: var(--surface-light);
+}
